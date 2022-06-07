@@ -126,6 +126,7 @@ form {
     grid-area: active;
     background: var(--clr-light);
     color: var(--clr-dark);
+    position: relative;
 
     .tasks-header {
         background: #e4e4e4;
@@ -222,10 +223,7 @@ form {
                 background: currentColor;
                 opacity: .1;
             }
-
-
         }
-
 
         .create-new-task {
             .new.task {
@@ -236,26 +234,25 @@ form {
                 color: var(--clr-primary);
             }
         }
+    }
 
-        .edit-tasks {
-            display: flex;
-            justify-content: space-evenly;
-            position: absolute;
-            width: 100%;
-            left: 0;
-            bottom: -50px;
-            color: var(--clr-light);
+    .edit-tasks {
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        width: 100%;
+        bottom: -35px;
+        left: 0;
+        color: var(--clr-light);
 
-            .delete {
-                font-size: 1rem;
-                opacity: .7;
-                transition: color 150ms linear;
+        .delete {
+            font-size: 1rem;
+            opacity: .7;
+            transition: color 150ms linear;
 
-                &:hover {
-                    color: var(--clr-warning);
-                }
+            &:hover {
+                color: var(--clr-warning);
             }
         }
-
     }
 }
